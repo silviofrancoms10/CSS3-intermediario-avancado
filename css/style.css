@@ -49,7 +49,79 @@ h1+p{
 }
 */
 /***********************************
-Seletor de irmão geral */
+Seletor de irmão geral 
 h1~p{
     color: aqua;
+}
+*/
+
+/************************************
+Herança e especifidade 
+p{
+    color: blue !important;
+}
+p{
+    color: red;
+}
+*/
+
+/* Se um seletor for mais específico que outro a regra mais específica será aplicada(terá precedência sobre regras mais gerais) */
+/*
+*{
+    color: red;
+}
+
+h2{ /*3
+    color: blue;
+}
+
+h2.verde{ /*2
+    color: green;
+}
+
+h2#amarelo{ /*1
+    color: yellow;
+}*/
+
+/**************************************
+Barra de navegação vertical */
+/*
+ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+        padding: 5px 20px;
+        border: 1px solid red;
+        background: url(../imagens/seta.png) no-repeat left center;
+}
+*/
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 30px;
+    line-height: 40px;
+    background: url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover{
+    background-position: right bottom;
+    color: white;
+}
+
+li{
+
 }
